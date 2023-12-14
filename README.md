@@ -50,8 +50,9 @@ while 1:
           Questo commando concatena i nomi dei file separati da virgola
             for x in filelist:
                 tosend += "," + x
-        except:
-            tosend = "Wrong path"  # Se si verifica un errore, invia un messaggio di errore
+       Questo commando se si verifica un errore, invia un messaggio di errore
+       except:
+            tosend = "Wrong path" 
 
         Questo commando invia la lista dei file al client
         connection.sendall(tosend.encode())
